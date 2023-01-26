@@ -1,4 +1,4 @@
-# cypress-basico-v2
+# cypress-b
 
 Sample project for basic course of the Talking About Testing.
 
