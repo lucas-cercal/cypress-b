@@ -1,0 +1,11 @@
+Cypress.Commands.add('fillMandatoryFieldsAndSubmit', () => {
+  cy.get('#firstName').click().type('Lucas')
+  cy.get('#lastName').click().type('Cercal Fontes')
+  cy.get('#email').click().type('lucascercal.fontes@gmail.com')
+  cy.get('#phone').click().type('41985318314')
+  cy.get('#product').select('Cursos')
+  cy.get('#email-checkbox').click()
+  cy.get('#phone-checkbox').click()
+  cy.get('#open-text-area').type('Lorem ipsum', { delay: 0 })
+  cy.contains('button', 'Enviar').click()
+})
